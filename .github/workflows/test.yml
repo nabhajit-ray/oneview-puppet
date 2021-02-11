@@ -18,4 +18,9 @@ jobs:
     - name: Run Tests
       env:
        WITH_COVERAGE: true
-      run: bundle exec rake test
+      run: bundle exec rake
+    - name: Upload Code Coverage
+      uses: actions/upload-artifact@v2
+      with:
+        name: code-coverage
+        path: coverage/
