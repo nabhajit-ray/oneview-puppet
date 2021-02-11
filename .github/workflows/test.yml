@@ -18,4 +18,4 @@ jobs:
     - name: Run Tests
       env:
        WITH_COVERAGE: true
-       run: bundle exec rake test
+      run: bundle exec rake test
